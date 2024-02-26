@@ -1,0 +1,122 @@
+/* VARIABLES CSS */
+:root {
+    --article-background: #D9D9D9;
+    --avatar-source: url("../images/avatar.png");
+    --avatar-border: 5px solid #FFFFFF;
+    --header-background: #A306B6;
+    --inclusive-source: url("../images/inclusive.png");
+    --main-color: #A306B6;
+    --responsive-source: url("../images/responsive.png");
+    --scalable-source: url("../images/scalable.png");
+}
+
+/* MOBILE PART */
+@media (max-width: 375px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: var(--header-background);
+        height: 50vh;
+        width: 100vw;
+        border:1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-favicon {
+        width: 100px;
+        height: 100px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        width: 100vw;
+    }
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: #FFFFFF;
+    }
+    .avatar {
+        outline: var(--avatar-border);
+        outline-offset: -4px;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .containerHeaderTitle {
+        color: #FFFFFF;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cards {
+        width: 80vw;
+        margin: 5% auto;
+    }
+    .container-cards .subTitle {
+        text-align: center;
+        color: var(--header-background);
+    }
+    .container-cards .cards {
+        width: 100%;
+        background-color: var(--article-background);
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+    .cards img {
+        width: inherit;
+        height: inherit;
+    }
+    .card-body {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-body button {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: var(--header-background);
+        color: #FFFFFF;
+        width: 100px;
+        height: 40px;
+        border-style: none;
+        border-radius: 100px;
+    }
+    h1 h2 h3 {
+        font-family: 'Montserrat';
+    }
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        margin: auto;
+    }
+    .container-about p {
+        margin-top: 10%;
+    }
+    footer {
+        margin-top: 10%;
+        background-color: var(--article-background);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-link {
+        color: var(--header-background);
+        text-decoration: none;
+    }
+}
+/* DESKTOP PART */
