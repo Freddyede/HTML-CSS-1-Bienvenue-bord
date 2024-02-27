@@ -119,7 +119,6 @@
     }
     
     .container-cards .cards {
-        width: 20%;
         background-color: var(--article-background);
         border-radius: 5px;
         margin-top: 2%;
